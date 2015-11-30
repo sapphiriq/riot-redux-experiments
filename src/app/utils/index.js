@@ -76,7 +76,7 @@ export function connect(mapStateToProps, mapDispatchToProps) {
           }
         });
         this.on('unmount', () => {
-          // unsubscribe();
+          unsubscribe();
         });
       });
     },

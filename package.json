@@ -4,7 +4,11 @@
   "description": "Isomorphic Riot-app example using Redux",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "5.0.0"
   },
   "author": "",
   "license": "ISC",
