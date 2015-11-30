@@ -1,0 +1,10 @@
+nav
+  ul
+    li: h1 App
+    li(class="{ 'is-active': isCurrent('home', {'asd': 123}) }"): a(href="{ homeLink }") Home
+    li(class="{ 'is-active': isCurrent('/about') }"): a(href="/about") About
+    li.utopia(class="{ 'is-active': isCurrent(linkToUtopiaProgram) }")
+      a(href="{ linkToUtopiaProgram }") Utopia
+    li.utopia: a(path="{ linkToUtopiaProgram }") Utopia
+    li.utopia: link-to(path="{ linkTo('program', { programId: 'killallhumans' }) }") Utopia
+    li: link-to(path="{ linkTo('program', { programId: 512 }, { limit: 12 }) }") Program #512

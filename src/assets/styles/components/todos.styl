@@ -1,0 +1,50 @@
+.todos-box
+.todos-list
+.todos-item
+.todos-form
+  display block
+
+.todos-box
+  padding 20px
+  border 1px solid dark-grey
+
+.todos-item__label
+  cursor pointer
+  display block
+  padding 5px 0
+
+.todos-item__delete-button
+  border 0
+  background dark-grey + 10%
+  color white
+  border-radius 50%
+  cursor pointer
+  font-size 14px
+  width 16px
+  height 16px
+  padding 0
+  line-height 16px
+.todos-item__delete-button:hover
+  background red
+
+
+.todos-box__heading
+  color white
+  margin-bottom 5px
+
+.todos-list__summary
+  margin 0
+  color grey
+  font-size 16px
+  margin-bottom 20px
+
+
+
+.todos-form
+  margin-top 20px
+
+.todos-form__input
+  @extend $base-input
+
+.todos-form__button
+  @extend $base-button

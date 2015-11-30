@@ -1,0 +1,27 @@
+$base-control
+  color white
+  border 0
+  padding 5px 10px
+  font-size 13px
+  border-radius 2px
+  cursor pointer
+  background grey
+  outline 0
+
+$base-button
+  @extend $base-control
+  background blue
+  transition 0.1s background-color
+  &:hover
+    background blue - 20%
+
+$base-input
+  @extend $base-control
+  background none
+  border 1px solid grey
+  &:focus
+    background rgba(blue, 0.1)
+    border-color blue
+
+.blue-button
+  @extend $base-button
